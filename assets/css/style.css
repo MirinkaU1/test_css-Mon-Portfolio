@@ -1,0 +1,320 @@
+html{
+    scroll-behavior: smooth;
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+    background-color: rgb(90, 90, 90);
+}
+
+main{
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.sidebar, .main_content{
+    background-color: #2D2E37;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(116, 116, 116);
+    padding: 30px;
+}
+
+
+/* Le texte */
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+
+}
+
+
+/* La sidbar */
+
+
+.sidebar{
+    position: sticky;
+    top: 60px;
+    max-height: max-content;
+    height: 100%;
+    min-width: 25%;
+    width: 25%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.infos p{
+    background: rgb(80, 80, 80);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+
+
+
+.avatar{
+    background: rgb(90, 90, 90);
+    border-radius: 20px;
+}
+
+.avatar img{
+    width: 150px;
+}
+
+.separator1 {
+    height: 1px;
+    width: 90%;
+    background: rgb(90, 90, 90);
+    margin: 15px 0px;
+}
+
+.contacts_list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px 15px;
+}
+
+.contact_item{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon img {
+    width: 40px;
+    background: rgb(179, 179, 179);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(179, 179, 179);
+} 
+
+.contact_info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.contact_title{
+    font-size: 12px;
+    color: rgb(179, 179, 179);
+}
+.contact_info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+/* Le Page principale */
+
+/* La navbar */
+
+.navbar{
+    background: rgb(90, 90, 90);
+    border-radius: 0 20px;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    padding: 0 20px;
+    box-shadow: none;
+}
+
+.onglet{
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+
+/* Le contenu principal */
+
+.main_content{
+    position: relative;
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+}
+
+.main_title {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.About .main_title {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.separator2 {
+    height: 5px;
+    width: 10%;
+    border-radius: 30px;
+    background: rgb(146, 146, 146);
+    margin: 15px 0px;
+}
+
+    /* Le parcours */
+
+.resume_title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume_title h3{
+    font-size: 20px;
+}
+.resume_title img {
+    background: rgb(146, 146, 146);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.resume_element{
+    display: flex;
+    margin-top: -7px;
+}
+
+.list_decoration{
+    height: 360px;
+    width: 1px;
+    background: rgb(146, 146, 146);
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.resume_list {
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.resume_info h3{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.resume_info h4{
+    font-size: 17px;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.resume_info p{
+    margin-bottom: 30px;
+}
+
+    /* Les competences */
+
+.work_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.work_content{
+    background: rgb(90, 90, 90);
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.work_icon {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.work_icon img {
+    width: 50px;
+}
+
+.work_info{
+    text-align: center;
+    margin: 10px;
+}
+
+/* Le formulaire */
+
+.form_input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+input, textarea, button{
+    display: block;
+    font: inherit;
+    font-size: 15px;
+}
+
+.input {
+    background: #2D2E37;
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgb(116, 116, 116);
+}
+
+textarea.input {
+    min-width: 100px;
+    width: 94%;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.form_button {
+    background: rgb(90, 90, 90);
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    margin-left: auto;
+}
+
+.form_button img {
+    width: 20px;
+}
